@@ -10,5 +10,5 @@
   (do ((count 0 (+ 1 count)))
       ((>= count (length labels)) labels)
     (let ((notevalue (number-string-p (nth 2 (nth count labels)))))
-      (setf notevalue (format nil "~a~a" (nth (rem (round (+ 69 (* 12 (/ (log (/ notevalue 440.0)) (log 2.0))))) 12) note-names) (/ (round (+ 69 (* 12 (/ (log (/ notevalue 440.0)) (log 2.0))))) 12)))
+      (setf notevalue (format nil "~a~a" (nth (rem (round (+ 57 (* 12 (/ (log (/ notevalue 440.0)) (log 2.0))))) 12) note-names) (/ (round (+ 57 (* 12 (/ (log (/ notevalue 440.0)) (log 2.0))))) 12)))
       (setf (nth 2 (nth count labels)) notevalue))))
